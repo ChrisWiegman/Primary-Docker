@@ -34,7 +34,7 @@ This will allow anything with a .test domain to point to the [Traefik](https://t
 
 ## Launching Primary Docker
 
-Instead of `docker-compose up -d` use `./develop up -d`. This will create a network called `primary_docker_default` which will make linking from other projects easier.
+Instead of `docker-compose up -d` use `./develop up -d`. This will create a network called `primarydocker_default` which will make linking from other projects easier.
 
 ## Accessing MailCatcher
 

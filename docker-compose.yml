@@ -14,7 +14,7 @@ services:
       - 'traefik.frontend.rule=Host:srdb.test'
       - 'traefik.domain=srdb.test'
       - 'traefik.enable=true'
-      - 'traefik.docker.network=ouroboros_default'
+      - 'traefik.docker.network=primarydocker_default'
       - 'traefik.port=80'
       - "traefik.frontend.redirect.entryPoint=http"
   mailcatcher:
@@ -30,7 +30,7 @@ services:
       - 'traefik.frontend.rule=Host:mailcatcher.test'
       - 'traefik.domain=mailcatcher.test'
       - 'traefik.enable=true'
-      - 'traefik.docker.network=ouroboros_default'
+      - 'traefik.docker.network=primarydocker_default'
       - 'traefik.port=1080'
       - "traefik.frontend.redirect.entryPoint=http"
   webgrind:
@@ -41,7 +41,7 @@ services:
       - 'traefik.frontend.rule=Host:webgrind.test'
       - 'traefik.domain=webgrind.test'
       - 'traefik.enable=true'
-      - 'traefik.docker.network=ouroboros_default'
+      - 'traefik.docker.network=primarydocker_default'
       - 'traefik.port=80'
       - "traefik.frontend.redirect.entryPoint=http"
   proxy:
